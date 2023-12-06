@@ -15,16 +15,9 @@ with open('input2.txt') as file:
                         i+= 1
 
         res += copy[0]
-        print(copy[0])
-        print(i//copy[0]+1)
-        print(i)
-
-        print(copy)
         
         for j in range(1, (i//copy[0]+1), 1):
             copy[j] += copy[0]
-
-        print(copy)
 
         copy.pop(0)
         copy.append(1)
